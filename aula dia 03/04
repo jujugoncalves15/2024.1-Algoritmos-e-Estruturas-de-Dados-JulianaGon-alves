@@ -1,0 +1,224 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyONwTAad4H+6r/gQsj2zf+L",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jujugoncalves15/2024.1-Algoritmos-e-Estruturas-de-Dados-JulianaGon-alves/blob/main/aula%20dia%2003/04\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 15,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "B4TS26Rtgs7u",
+        "outputId": "5d794a5c-6707-4c27-8246-662cf73c2c05"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1: spam\n",
+            "2: eggs\n",
+            "3: bacon\n"
+          ]
+        }
+      ],
+      "source": [
+        "\n",
+        "contador = 0\n",
+        "for x in ['spam', 'eggs', 'bacon']:\n",
+        "  contador += 1\n",
+        "  print(f\"{contador}: {x}\")\n",
+        ""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "contador = 0\n",
+        "for x in ['spam', 'eggs', 'bacon']:\n",
+        "  print(f\"{contador}: {x}\")\n",
+        "  contador += 1\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Fxcqi6Ohj3oz",
+        "outputId": "8b35add5-3149-40d3-f0cb-7eafe4f6fb6d"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0: spam\n",
+            "1: eggs\n",
+            "2: bacon\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "T = [(1,2), (3,4), (5,6)]\n",
+        "for (a,b) in T:\n",
+        "    print(a, \" e \", b)\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TPIBXPntj8Wp",
+        "outputId": "7e1be9f1-ca83-483d-8d82-0d284bef5d27"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1  e  2\n",
+            "3  e  4\n",
+            "5  e  6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Dicionário em python\n",
+        "D= {'a': 1, 'b': 2, 'c':3}\n",
+        "for chave in D:\n",
+        "    print(chave, \"=>\",D[chave])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_Zkjp1DCknSE",
+        "outputId": "290ded88-78e6-42b6-fa1c-d5dc7b50a30f"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a => 1\n",
+            "b => 2\n",
+            "c => 3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range (5):\n",
+        "    print (i, \"pythons\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rQFclUrymk-7",
+        "outputId": "541fcbff-bb37-450c-d9d3-fa6d824970e9"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0 pythons\n",
+            "1 pythons\n",
+            "2 pythons\n",
+            "3 pythons\n",
+            "4 pythons\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s = 'juliana'\n",
+        "print(\"Tamanho da palavra:\", len(s))\n",
+        "for i in range(len(s)):\n",
+        "  print(i,s[i],sep='-',end=' ')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XzIIg7dUobOo",
+        "outputId": "8808cd9b-f216-42e3-f997-a948da6c84e5"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Tamanho da palavra: 7\n",
+            "0-j 1-u 2-l 3-i 4-a 5-n 6-a "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "51M6Vrrbnw7L",
+        "outputId": "2c4278a2-f809-4fc7-9a37-f63a0b273070"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax (<ipython-input-23-d6951a5cd1ec>, line 2)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-23-d6951a5cd1ec>\"\u001b[0;36m, line \u001b[0;32m2\u001b[0m\n\u001b[0;31m    for i\u001b[0m\n\u001b[0m         ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
